@@ -9,10 +9,12 @@ const sequelize = new Sequelize(
     dialect: 'postgres',
     quoteIdentifiers: false,
     operatorsAliases: false,
-    ssl: {
-      require: true,
-      rejectUnauthorized: false // <<<<<<< YOU NEED THIS
-    }
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false // <<<<<<< YOU NEED THIS
+      }
+    },
   }
 );
 module.exports = sequelize;
