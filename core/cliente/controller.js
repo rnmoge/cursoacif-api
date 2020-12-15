@@ -1,7 +1,11 @@
 const model = require('./model');
 
 module.exports = {
-  buscarTodos
+  buscarTodos,
+  buscarPorId,
+  inserir,
+  alterar,
+  remover
 }
 async function buscarTodos(req, res){
   try {
