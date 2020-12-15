@@ -20,7 +20,7 @@ app.use(helmet()); // tira cabeçalhos do header, ajuda na segurança
 app.use(cors);
 //autenticacaoRoute(app);
 
-app.use(auth);
+//app.use(auth);
 
 clienteTipoRoute(app);
 clienteRoute(app);
